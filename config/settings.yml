@@ -1,0 +1,4 @@
+max_length_name: 50
+max_length_email: 255
+max_length_password: 6
+image_Size: 80
