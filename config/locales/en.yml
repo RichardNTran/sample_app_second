@@ -32,5 +32,10 @@ en:
       This is the sample application for the tutorial."
   user:
     signup: "Sign up"
-
+    confirmation: "Confirmation"
+    submit: "Create my account"
+    success: "Welcome to the Sample App!"
+    nil: "User is not exits!"
+  errors:
+    first: "The form contains"
 
