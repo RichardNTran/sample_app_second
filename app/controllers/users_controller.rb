@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
   def show
     @user = User.find_by id: params[:id]
-    if @user.nil?
+    unless @user
       flash[:errors] = t "user.nil"
       redirect_to signup_path
     end
