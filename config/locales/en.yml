@@ -7,7 +7,11 @@ en:
     news: "News"
   header:
     sample_app: "sample app"
-
+    users: "Users"
+    account: "Account"
+    profile: "Profile"
+    settings: "Settings"
+    logout: "Log out"
   help:
     title: "Help"
     content: "Get help on the Ruby on Rails Tutorial at the
@@ -38,4 +42,10 @@ en:
     nil: "User is not exits!"
   errors:
     first: "The form contains"
+  sessions:
+    title: "Log in"
+    newuser: "New user?"
+    signup: "Sign up now!"
+    login: "Log in"
+    invalidlogin: "Invalid email/password combination"
 
