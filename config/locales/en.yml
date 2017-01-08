@@ -40,6 +40,25 @@ en:
     submit: "Create my account"
     success: "Welcome to the Sample App!"
     nil: "User is not exits!"
+    edit_title: "Edit user"
+    update_profile: "Update your profile"
+    gravatar_url: "http://gravatar.com/emails"
+    edit_submit:  "Save changes"
+    change: "change"
+    update_success: "Profile updated"
+    require_logged: "Please log in."
+    delete_confirm: "You sure?"
+    delete_success: "User deleted"
+    delete_label: "| delete"
+    index_title: "Index"
+    activate_email: "Please check your email to activate your account"
+    activated_account: "Account activated!"
+    invalid_activated_account: "Invalid activation link"
+    not_activated: "Account not activated. Check your email for the activation link."
+    invalid_user: "Account is not actived or not exits"
+    correct_user: "Just allow update your profile"
+    delete_unsuccess: "Can't delete user"
+    just_admin_role: "This function just allow admin"
   errors:
     first: "The form contains"
   sessions:
@@ -49,4 +68,11 @@ en:
     login: "Log in"
     invalid_login: "Invalid email/password combination"
     remember_account: "Remember me on this computer"
+  mailer:
+    activation:
+      subject: "Account activation"
+      content: "Welcome to the Sample App! Click on the link below to activate your account:"
+      greeting: "Hi %{name},"
+      reset_password:
+        greeting: "Hi"
 

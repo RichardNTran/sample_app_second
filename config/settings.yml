@@ -1,4 +1,8 @@
 max_length_name: 50
 max_length_email: 255
 max_length_password: 6
-image_Size: 80
+image_size: 80
+image_size_index: 50
+per_page: 15
+default_email_to: "to@example.org"
+default_email_from: "noreply@example.com"
