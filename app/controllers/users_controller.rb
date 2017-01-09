@@ -12,6 +12,7 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find_by id: params[:id]
+    @microposts = @user.microposts.paginate page: params[:page]
     unless @user && @user.activated
       redirect_to root_url
       flash[:warning] = t "user.invalid_user"
@@ -52,6 +53,24 @@ class UsersController < ApplicationController
     redirect_to users_url
   end
 
+  def show_follow
+    @user
+  end
+
+  def following
+    @title = t "user.following"
+    @user  = User.find_by id: params[:id]
+    @users = @user.following.paginate page: params[:page]
+    render :show_follow
+  end
+
+  def followers
+    @title = t "user.followers"
+    @user  = User.find_by id: params[:id]
+    @users = @user.followers.paginate page: params[:page]
+    render :show_follow
+  end
+
   private
   def load_user
     @user = User.find_by id: params[:id]
@@ -63,14 +82,6 @@ class UsersController < ApplicationController
 
   def user_params
     params.require(:user).permit :name, :email, :password, :password_confirmation
-  end
-
-  def logged_in_user
-    unless logged_in?
-      store_location
-      flash[:danger] = t "user.require_logged"
-      redirect_to login_url
-    end
   end
 
   def admin_user
