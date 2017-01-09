@@ -3,6 +3,9 @@ max_length_email: 255
 max_length_password: 6
 image_size: 80
 image_size_index: 50
+image_size_small: 30
 per_page: 15
 default_email_to: "to@example.org"
 default_email_from: "noreply@example.com"
+following: "following"
+follower: "follower"
