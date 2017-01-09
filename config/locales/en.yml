@@ -2,7 +2,10 @@ en:
   hello: "Hello world"
 
   sample_app_title: "Ruby on Rails Tutorial Sample App"
-
+  view_info: "view my profile"
+  place_holder: "Compose new micropost..."
+  post: "Post"
+  navigate_error: "Errors when tried navigate to page!"
   footer:
     news: "News"
   header:
@@ -22,6 +25,7 @@ en:
     title: "Home"
     head_title: "Welcome to the Sample App"
     signup_title: "Sign up now!"
+    micropost_feed: "Micropost Feed"
   contact:
     title: "Contact"
     content: "Contact the Ruby on Rails Tutorial about the sample app at the
@@ -61,8 +65,17 @@ en:
     delete_unsuccess: "Can't delete user"
     just_admin_role: "This function just allow admin"
     forgot_password: "Forgot password"
+    follow: "Follow"
+    unfollow: "Unfollow"
+    following: "Following"
+    followers: "Followers"
+    microposts: "Microposts:"
+    micropost_count: "Microposts (%{param1})"
+    not_unfollow: "Can't unfollow"
+    following_count: "<strong id='following' class='stat'>%{count}</strong> following."
+    follewr_count: "<strong id='followers' class='stat'>%{count}</strong> followers."
   errors:
-    first: "The form contains"
+    first: "The form contains %{param1}."
   sessions:
     title: "Log in"
     new_user: "New user?"
@@ -99,3 +112,23 @@ en:
     reset_success: "Password has been reset."
     account_notvalid: "Account is not activated or wrong authenticated"
     update: "Update password"
+  micropost:
+    create_success: "Micropost created"
+    create_unsuccess: "Error when create"
+    confirm: "You sure?"
+    max_image_size: "should be less than 5MB"
+    destroy:
+      success: "Micropost deleted"
+      unsuccess: "Can't delete micropost"
+    maximum_size_alert: Maximum file size is 5MB. Please choose a smaller file."
+    post: "Post %{param1} ago."
+    not_exist: "Micropost is not exist!"
+  action:
+    delete: "delete"
+  shared:
+    following: "following"
+    followers: "followers"
+    following_count: "%{param1}following."
+    followers_count: "%{param1}followers."
+  relationship:
+    nil: "Not exist relationship"

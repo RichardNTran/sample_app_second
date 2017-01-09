@@ -3,6 +3,7 @@ class UsersController < ApplicationController
   before_action :correct_user, only: [:edit, :update]
   before_action :admin_user, only: :destroy
   before_action :load_user, only: [:edit, :update, :destroy]
+
   def index
     page_size = params[:per_page].present? ? params[:per_page] :
       Settings.per_page
@@ -12,6 +13,7 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find_by id: params[:id]
+    @microposts = @user.microposts.paginate page: params[:page]
     unless @user && @user.activated
       redirect_to root_url
       flash[:warning] = t "user.invalid_user"
@@ -53,6 +55,7 @@ class UsersController < ApplicationController
   end
 
   private
+
   def load_user
     @user = User.find_by id: params[:id]
     unless @user
@@ -63,14 +66,6 @@ class UsersController < ApplicationController
 
   def user_params
     params.require(:user).permit :name, :email, :password, :password_confirmation
-  end
-
-  def logged_in_user
-    unless logged_in?
-      store_location
-      flash[:danger] = t "user.require_logged"
-      redirect_to login_url
-    end
   end
 
   def admin_user
