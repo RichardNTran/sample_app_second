@@ -29,7 +29,7 @@ Rails.application.configure do
   # Don't care if the mailer can't send.
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.delivery_method = :smtp
-  host = "shielded-shelf-39497.herokuapp.com"
+  host = "agile-atoll-57154.herokuapp.com"
   config.action_mailer.default_url_options = {host: host}
   # ActionMailer::Base.smtp_settings = {
   #   address: "smtp.sendgrid.net",
