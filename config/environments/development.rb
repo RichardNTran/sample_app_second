@@ -40,15 +40,19 @@ Rails.application.configure do
   #   domain: "heroku.com",
   #   enable_starttls_auto: true
   # }
+  # ActionMailer::Base.smtp_settings = {
+  #   address:        "smtp.gmail.com",
+  #   port:            "587",
+  #   authentication:  :plain,
+  #   user_name:       "fbt3.framgia@gmail.com",
+  #   password:        "framgia123",
+  #   enable_starttls_auto: true
+  # }
 
-  ActionMailer::Base.smtp_settings = {
-      address:        "smtp.gmail.com",
-      port:            "587",
-      authentication:  :plain,
-      user_name:       "fbt3.framgia@gmail.com",
-      password:        "framgia123",
-      enable_starttls_auto: true
-    }
+  config.action_mailer.delivery_method = :test
+  host = "localhost:3000"
+  config.action_mailer.default_url_options = {host: host, protocol: "http"}
+
 
   config.action_mailer.perform_caching = false
 

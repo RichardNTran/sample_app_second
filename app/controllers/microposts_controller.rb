@@ -14,7 +14,6 @@ class MicropostsController < ApplicationController
   end
 
   def destroy
-    byebug
     @micropost.destroy ? flash[:success] = t("micropost.destroy.success") :
       flash[:danger] = t("micropost.destroy.unsuccess")
     redirect_to request.referrer || root_url
