@@ -85,6 +85,7 @@ en:
     remember_account: "Remember me on this computer"
   mailer:
     activation:
+      link: "Activation"
       subject: "Account activation"
       content: "Welcome to the Sample App! Click on the link below to activate
         your account:"
