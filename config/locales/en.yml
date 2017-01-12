@@ -17,10 +17,7 @@ en:
     logout: "Log out"
   help:
     title: "Help"
-    content: "Get help on the Ruby on Rails Tutorial at the
-      http://www.railstutorial.org/help
-      To get help on this sample app, see the
-      http://www.railstutorial.org/book"
+    content: "Get help on the Ruby on Rails Tutorial at the http://www.railstutorial.org/help To get help on this sample app, see the http://www.railstutorial.org/book"
   home:
     title: "Home"
     head_title: "Welcome to the Sample App"
@@ -28,8 +25,7 @@ en:
     micropost_feed: "Micropost Feed"
   contact:
     title: "Contact"
-    content: "Contact the Ruby on Rails Tutorial about the sample app at the
-      http://www.railstutorial.org/contact"
+    content: "Contact the Ruby on Rails Tutorial about the sample app at the http://www.railstutorial.org/contact"
   about:
     title: "About"
     content: "The http://www.railstutorial.org is a
@@ -58,8 +54,7 @@ en:
     activate_email: "Please check your email to activate your account"
     activated_account: "Account activated!"
     invalid_activated_account: "Invalid activation link"
-    not_activated: "Account not activated. Check your email for the activation
-      link."
+    not_activated: "Account not activated. Check your email for the activation link."
     invalid_user: "Account is not actived or not exits"
     correct_user: "Just allow update your profile"
     delete_unsuccess: "Can't delete user"
