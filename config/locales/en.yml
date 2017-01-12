@@ -121,7 +121,7 @@ en:
     destroy:
       success: "Micropost deleted"
       unsuccess: "Can't delete micropost"
-    maximum_size_alert: Maximum file size is 5MB. Please choose a smaller file."
+    maximum_size_alert: "Maximum file size is 5MB. Please choose a smaller file."
     post: "Post %{param1} ago."
     not_exist: "Micropost is not exist!"
   action:
